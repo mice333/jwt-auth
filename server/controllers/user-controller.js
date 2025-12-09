@@ -1,6 +1,9 @@
+const userService = require("../service/user-service");
+
 class UserController {
   async registration(req, res, next) {
     try {
+      userService.registration("nokisev", "31431");
     } catch (e) {}
   }
 
